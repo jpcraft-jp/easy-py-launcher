@@ -16,8 +16,8 @@ license = "MIT"
 license-files = ["LICEN[CS]E*"]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/jpcraft-jp/easy-py-launcher"
+Issues = "https://github.com/jpcraft-jp/easy-py-launcher/issues"
 
 [project.scripts]
 pyrun = "simple_launcher_jp.main:main"
