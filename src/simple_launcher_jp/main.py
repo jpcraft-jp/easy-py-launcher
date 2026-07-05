@@ -23,7 +23,6 @@ def main():
         run(config["scripts"][sys.argv[2]], sys.argv[3:], config.get("codedir", "."))
 
     if type_hint == "activate":
-        venv_path = config.get("workdir", ".") / config.get("venv", "venv")
         activate_venv(config, config.get("workdir", "."))
 
 if __name__ == "__main__":
