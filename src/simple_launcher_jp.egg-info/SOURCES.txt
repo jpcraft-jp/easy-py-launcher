@@ -1,3 +1,4 @@
+README.md
 pyproject.toml
 src/simple_launcher_jp/__init__.py
 src/simple_launcher_jp/__main__.py

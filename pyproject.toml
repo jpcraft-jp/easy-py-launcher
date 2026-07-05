@@ -1,12 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "simple_launcher_jp"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="jean-piere", email="devjeanpiere@gmail.com" },
 ]
-description = "an easy launcher for python pogramms"
+description = "An easy python launcher with a little bit npm vibe"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",

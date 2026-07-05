@@ -19,7 +19,7 @@ Run the wizard in your project directory to set up your configuration:
 
 ```bash
 python -m simple_launcher_jp init .
-
+```
 The wizard will guide you through project details, create your pypack.json, and handle the virtual environment and dependencies in one go.
 2. Project Structure
 

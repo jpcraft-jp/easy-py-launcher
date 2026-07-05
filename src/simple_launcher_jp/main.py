@@ -22,7 +22,7 @@ def main():
     
     
     if type_hint == "run":
-        run(config["scripts"][sys.argv[2]], sys.argv[3:], config.get("workdir", "."))
+        run(config["scripts"][sys.argv[2]], sys.argv[3:], config.get("codedir", "."))
 
     if type_hint == "activate":
         venv_path = config.get("workdir", ".") / config.get("venv", "venv")

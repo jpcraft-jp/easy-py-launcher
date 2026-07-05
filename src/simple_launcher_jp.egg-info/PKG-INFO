@@ -1,12 +1,77 @@
 Metadata-Version: 2.4
 Name: simple_launcher_jp
-Version: 0.0.1
-Summary: an easy launcher for python pogramms
+Version: 0.0.2
+Summary: An easy python launcher with a little bit npm vibe
 Author-email: jean-piere <devjeanpiere@gmail.com>
 License-Expression: MIT
 Project-URL: Homepage, https://github.com/jpcraft-jp/easy-py-launcher
 Project-URL: Issues, https://github.com/jpcraft-jp/easy-py-launcher/issues
 Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: OS Independent
-Requires-Python: >=3.9
+Requires-Python: >=3.7
 Description-Content-Type: text/markdown
+
+# 🚀 Easy Py Launcher
+
+A lightweight Python project runner and initialization wizard. Built with an "npm-like" experience in mind to keep your Python projects—from microcontrollers to hardware emulators—organized and ready to code.
+
+## ✨ Features
+
+*   **Init-Wizard**: Effortlessly scaffold your project with a generated `pypack.json`.
+*   **Automated Venv**: Seamless virtual environment creation tailored to your workspace.
+*   **Dependency Management**: Automatically install dependencies into your project’s environment.
+*   **Cross-Platform**: Works smoothly on Windows, Linux, and macOS.
+*   **Clean Structure**: Keeps your build configuration separate from your source code.
+
+---
+
+## 🛠️ Quick Start
+
+### 1. Initialize
+Run the wizard in your project directory to set up your configuration:
+
+```bash
+python -m simple_launcher_jp init .
+```
+The wizard will guide you through project details, create your pypack.json, and handle the virtual environment and dependencies in one go.
+2. Project Structure
+
+Your project remains clean and predictable:
+Plaintext
+
+my-project/
+├── pypack.json      # Project configuration
+├── venv/            # Virtual environment
+└── src/             # Your source code
+
+⚙️ Why Easy Py Launcher?
+
+When working on low-level projects like hardware emulators or microcontrollers, setting up environments can become a distraction. Easy Py Launcher handles the boilerplate, so you can focus on what matters: the logic.
+
+    "Less time fighting with paths, more time hacking on the n80 chip."
+
+🏗️ Development & Setup
+
+To work on the tool itself, install it in "editable mode" so your changes are immediately reflected:
+Bash
+
+# From the project root
+pip install -e .
+
+Note: If you are on Linux, ensure your PYTHONPATH includes the src directory to resolve modules correctly.
+📜 Roadmap
+
+    [x] Wizard logic (init)
+
+    [x] Venv automation
+
+    [ ] Runner integration (execute scripts defined in pypack.json)
+
+    [ ] Global alias support (for that true "npm" terminal experience)
+
+📝 License
+
+Feel free to use and improve it. Happy coding, JP!
+
+
+Das sieht jetzt sehr professionell aus! Die Kombination aus dem "npm-Vibe" und deinem konkreten Ziel (Emulator-Entwicklung) gibt dem Ganzen einen sehr klaren Fokus. Passt das so für dich, oder soll ich noch einen Abschnitt zur Fehlerbehebung oder zu den Voraussetzungen hinzufügen?
