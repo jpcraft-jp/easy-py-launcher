@@ -1,9 +1,7 @@
 import sys, json
 from .run import run
 from .init_wizard import init_wizard
-
-
-
+from .activate_venv import activate_venv
 
 def main():
     type_hint = sys.argv[1]
@@ -26,14 +24,7 @@ def main():
 
     if type_hint == "activate":
         venv_path = config.get("workdir", ".") / config.get("venv", "venv")
-        if not venv_path:
-            print("No virtual environment found in pypack.json, please run 'pyrun init' to create it")
-            sys.exit(1)
-        if sys.platform == "win32":
-            activate_script = f"{venv_path}\\Scripts\\activate"
-        else:
-            activate_script = f"{venv_path}/bin/activate"
-        print(f"To activate the virtual environment, run: source ./{activate_script}")
+        activate_venv(config, config.get("workdir", "."))
 
 if __name__ == "__main__":
     main()
