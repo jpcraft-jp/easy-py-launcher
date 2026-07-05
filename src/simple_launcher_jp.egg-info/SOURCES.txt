@@ -1,8 +1,0 @@
-pyproject.toml
-src/simple_launcher_jp/__init__.py
-src/simple_launcher_jp/run.py
-src/simple_launcher_jp.egg-info/PKG-INFO
-src/simple_launcher_jp.egg-info/SOURCES.txt
-src/simple_launcher_jp.egg-info/dependency_links.txt
-src/simple_launcher_jp.egg-info/entry_points.txt
-src/simple_launcher_jp.egg-info/top_level.txt

@@ -1,2 +1,0 @@
-[console_scripts]
-pyrun = simple_launcher_jp.run:main
