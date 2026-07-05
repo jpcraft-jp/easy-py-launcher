@@ -20,4 +20,4 @@ Homepage = "https://github.com/pypa/sampleproject"
 Issues = "https://github.com/pypa/sampleproject/issues"
 
 [project.scripts]
-pyrun = "simple_launcher_jp.__init__:main"
+pyrun = "simple_launcher_jp.main:main"

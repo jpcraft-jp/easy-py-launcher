@@ -49,7 +49,7 @@ def init_wizard(work_dir="."):
     
     print(f"init file created at {init_file}")
     vanv = input("Do you want to create a virtual environment? default yes (y/n) : ")
-    if vanv.lower() == "y" or vanv.lower == "":
+    if vanv.lower() == "y" or vanv.lower() == "":
         venv_dir = work_dir / "venv"
         if not venv_dir.exists():
             print(f"creating virtual environment at {venv_dir}")
@@ -62,9 +62,9 @@ def init_wizard(work_dir="."):
         if init_file_content["venv"]:
             if init_file_content["venv"]:
                 if os.name == "nt":
-                    pip_path = pathlib.Path(init_file_content["venv"]) / "Scripts" / "pip.exe"
+                    pip_path = pathlib.Path(work_dir) / init_file_content["venv"] / "Scripts" / "pip.exe"
                 else:
-                    pip_path = pathlib.Path(init_file_content["venv"]) / "bin" / "pip"
+                    pip_path = pathlib.Path(work_dir) / init_file_content["venv"] / "bin" / "pip"
                     
                 if not pip_path.exists():
                     print(f"pip not found at {pip_path}, cannot install dependencies")

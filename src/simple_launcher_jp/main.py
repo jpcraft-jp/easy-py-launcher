@@ -10,6 +10,7 @@ def main():
     
     if type_hint == "init":
         init_wizard(sys.argv[2])
+        sys.exit(0)
     
     try:
         with open("pypack.json", "r") as f:
@@ -24,7 +25,7 @@ def main():
         run(config["scripts"][sys.argv[2]], sys.argv[3:], config.get("workdir", "."))
 
     if type_hint == "activate":
-        venv_path = config.get("venv")
+        venv_path = config.get("workdir", ".") / config.get("venv", "venv")
         if not venv_path:
             print("No virtual environment found in pypack.json, please run 'pyrun init' to create it")
             sys.exit(1)
